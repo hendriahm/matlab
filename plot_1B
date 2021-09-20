@@ -1,0 +1,11 @@
+clf();clc;close;clear;
+%x = [1 2 3 4 5 6 7 8 9 10];
+%x = [-100:20:100]; %(Selang angka 20)
+x = [-100:5:100]; %(interval 5)
+y = x.^2;
+plot(x, y,'LineWidth', 1.5)
+grid; set(gca,'LineWidth',1.5) 
+xlabel('sumbu x'); ylabel('sumbu y'); zlabel('sumbu z');
+title('Grafik y = x^2') 
+saveas(gcf,'plot_1b.png') % output dalam png
+saveas(gcf,'plot_1b.pdf') % output dalam pdf
