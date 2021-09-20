@@ -1,0 +1,10 @@
+clf();clc;close;clear;
+x = [0:5:100];
+y = x;
+plot(x, y,'LineWidth',1.5)  % buat warna berbeda, kalau plot lebih dari 2
+grid; set(gca,'LineWidth',1.5) 
+xlabel('sumbu x'); ylabel('sumbu y'); zlabel('sumbu z');
+%legend('y = 3*x^2+5*x+7','y = 2^x');% legend dibuat kalau plot lebih dari 2 
+title('Grafik y = x')
+saveas(gcf,'plot_1a.png') % output dalam png
+saveas(gcf,'plot_1a.pdf') % output dalam pdf 
